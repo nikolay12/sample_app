@@ -88,6 +88,8 @@ Spork.prefork do
     #     --seed 1234
     config.order = "random"
     config.include Capybara::DSL
+    #added manually by NN on 2014-04-05:
+    config.include Rails.application.routes.url_helpers
   end
 end
 
